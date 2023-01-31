@@ -66,7 +66,8 @@ export function maskTime(value) {
         switch (i) {
             case 0:
                 if (digit > 2) {
-                    digit = 2;
+                    colonCounter++;
+                    digit = "0" + digit;
                 }
                 break;
             case 1:
