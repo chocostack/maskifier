@@ -228,3 +228,7 @@ export function unMaskDate(value) {
 
     return unMaskedValue;
 }
+
+export function removeSpecialCharacters(inputString) {
+    return inputString.replace(/[^a-zA-Z0-9\s]/g, '');
+}
